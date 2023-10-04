@@ -1,0 +1,203 @@
+.login{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.login > button {
+    color: white;
+    margin: 0;
+}
+.login>input{
+    border: 1px solid rgba(255, 80, 0, 1);
+    font-size: 14px;
+    padding: 0.5vw 1.5vw;
+}
+.login>input:focus-visible {
+    outline: none;
+    border: 2px solid rgba(255, 80, 0, 1);
+    padding: calc(0.5vw - 1px) calc(1.5vw - 1px);
+}
+.miniImg{
+    position: static;
+    transform: none;
+    border:'1px solid white';
+    width: 50px;
+    height: 70px;
+}
+
+.formBlock{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.formBlock>span{
+    font-size: 12px;
+}
+
+.formBlock>button{
+    height: 30px;
+    color: white;
+}
+
+.formBlock>input,textarea{
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 2px 5px;
+}
+
+.formBlock>h3{
+    color:tomato;
+    font-size: 13px;
+}
+.list{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    padding: 0px 0;
+}
+.listItem{
+    border: 1px solid white;
+    padding: 2px 5px;
+    width: 350px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.mainWrap{
+    display: flex;
+    margin: 0px 0px 50px 0px;
+}
+
+.itemsBlock{
+    width: 500px;
+    
+}
+.aboutBlock{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.aboutBlock>span{
+    font-size: 13px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.aboutBlock>input{
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+
+.button{
+    color: white;
+    font-weight: 600;
+    width: 275px;
+}
+
+.textField{
+    
+    color: white;
+    resize: none;
+    opacity: 1;
+    background: transparent;
+    border: 0;
+    padding: 0 30px;
+    font-family: NunitoSans;
+    font-size: 0.70vw;
+    font-weight: 500;
+    letter-spacing: 0.075vw;
+    line-height: 150%;
+}
+
+
+.adminTitle {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: ManifoldExtended;
+    margin: 50px 0px 30px 0px;
+  }
+  
+  .contactsRedactorInput {
+    width: 360px;
+    justify-content: space-between;
+    margin: 0px 0px 7px 0px;
+  }
+  .contactsRedactorInput:last-child {
+    margin: 0px;
+  }
+  
+  .redactorInputTitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 50px 0px 30px 0px;
+  }
+  
+  .adminButtonBlock {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    align-items: center;
+    pointer-events: all;
+  }
+  
+  .adminButton:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .exitAdminButton {
+    width: 30px;
+    height: 30px;
+    margin: 0px 0px 0px 7px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .crossLine {
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background-color: white;
+  }
+  .exitAdminButton:hover {
+    transform: scale(1.1);
+  }
+  
+  .crossLine:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  .crossLine:nth-child(2) {
+    transform: rotate(-45deg);
+  }
+  
+  
+  
+  .loginButton {
+    color: white
+  }
+  
+  .aboutPhotoButton {
+    margin: 10px 0px 0px 0px;
+    background-color: rgba(255, 80, 0, 1);
+    width: fit-content;
+    padding: 8px 35px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    cursor: pointer;
+    transition: 0.15s;
+  }
+  
+  .aboutPhotoButton:hover {
+    background-color: rgb(212, 68, 1);
+  }
+  
+  .columnBlock {
+    flex-direction: column;
+  }

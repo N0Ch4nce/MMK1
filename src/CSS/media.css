@@ -1,0 +1,1419 @@
+@media(min-width: 1920px) {
+    
+}
+
+@media (max-width: 1680px) {
+    .headerContent, .page, .footerContent {
+        max-width: 1400px;
+    }
+
+    .pageContent {
+        min-height: calc(100vh - 145px);
+        height: calc(100vh - 145px);
+    }
+    .footerContent {
+        justify-content: space-between;
+    }
+
+    .header {
+        height: 70px;
+    }
+
+    .logoHeader {
+        width: 120px;
+        height: 45px;
+        margin: 0px 20px 0px 0px;
+    }
+
+    .navLi {
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin: 0px 45px 0px 0px;
+    }
+
+    .titleBlock .title {
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+
+    .titleBlock .city {
+        font-size: 40px;
+        letter-spacing: 2px;
+        margin: 15px 0px 0px 0px;
+    }
+
+    .titleBlock .city:before {
+        width: 25px;
+        height: 25px;
+        margin: 5px 10px 0px 10px;
+    }
+
+    .advantage {
+        margin: 0px 0px 20px 0px;
+    }
+
+    .advText {
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    .advIcon {
+        width: 15px;
+        height: 15px;
+        margin: 0px 10px 0px 0px;
+    }
+
+
+
+
+    /* RENTOPENED */
+    .infoTitle {
+        font-size: 30px;
+        margin: 0px 0px 15px 0px;
+    }
+    .infoDescription {
+        font-size: 16px;
+    }
+
+    .conditionsTitle {
+        font-size: 24px;
+        letter-spacing: 1.5px;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .infoTabTitle {
+        font-size: 24px;
+        letter-spacing: 1.5px;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .charName {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .charTextBlock {
+        font-size: 16px;
+    }
+    .charText1 {
+        width: 130px;
+    }
+    .radius .charText1, .height .charText1 {
+        width: 50px;
+    }
+    .docText {
+        font-size: 17px;
+    }
+
+    .docIcon {
+        width: 20px;
+        height: 20px;
+        margin: 0px 15px 0px 0px;
+    }
+
+    button {
+        padding: 10px 30px;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .conditionsDescription {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+    }
+
+    .infoTabs {
+        margin: 40px 0px 15px 0px;
+    }
+
+    .infoTab {
+        font-size: 16px;
+        letter-spacing: 1px;
+        padding: 10px 25px;
+        margin: 0px 15px 0px 0px;
+    }
+
+    .conditionsFrame {
+        width: 650px;
+        height: 50px;
+        margin: 15px 0px 0px 0px;
+    }
+
+    .tgFrame {
+        min-width: 50px;
+    }
+
+    .whatsAppFrame {
+        min-width: 50px;
+    }
+
+    .mailFrame {
+        font-size: 16px;
+        letter-spacing: 1.5px;
+    }
+
+    .numberFrame {
+        font-size: 16px;
+        letter-spacing: 1.6px;
+    }
+
+
+
+
+    /* ABOUT */
+    p {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        margin: 0px 0px 10px 0px;
+    }
+
+    li {
+        font-size: 15px;
+        letter-spacing: 0.4px;
+        margin: 0px 0px 5px 0px;
+    }
+
+    .photoBlock h3 {
+        font-size: 15px;
+        letter-spacing: 1px;
+        transform: translate(0px, calc(100% + 20px));
+    }
+
+    .descriptionBlock {
+        width: calc(50% - 20px);
+        margin: 0px 0px 0px 20px;
+    }
+
+    .requisitesBox {
+        width: 330px;
+        height: 210px;
+        padding: 25px;
+        font-size: 15px;
+    }
+
+    .requisitesTitle {
+        font-size: 35px;
+        margin: 0px 0px 10px 0px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .rentCardsBlock {
+        min-height: unset;
+        margin: 0px 0px 0px 0px;
+    }
+    .headerContent, .page, .footerContent {
+        max-width: 1200px;
+    }
+
+    .footerLogo {
+        width: 80px;
+        height: 30px;
+    }
+
+    .footerBlock.logo {
+        width: 80px;
+    }
+
+    .footerCenterBlock {
+        width: 100%;
+        justify-content: space-between;
+        margin: 0px 0px 0px 20px;
+    }
+    .contactsRow.title {
+        height: 10px;
+        font-size: 10px;
+    }
+    .footerBlock > * {
+        margin: 0px 0px 4px 0px;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .footerBlock.contacts3 > * {
+        font-size: 14px;
+        line-height: 1.1;
+    }
+
+    .headerBlock:nth-child(2) {
+        width: 60%;
+        justify-content: space-between;
+    }
+    .navigationHeader {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+
+
+
+    /* RENTPAGE */
+    .rentPage .pageContentBlock{
+        flex-direction: column;
+    }
+
+    .rentFilterBlock {
+        margin: 0px 0px 40px 0px;
+    }
+
+    .rentCardsBlock {
+        width: 100%;
+    }
+
+    .rentCard {
+        flex-direction: column;
+        width: calc(33% - 30px);
+        margin: 0px 30px 50px 0px;
+    }
+
+    .rentCard:nth-child(3n) {
+        margin: 0px 0px 50px 0px;
+    }
+
+    .contentName {
+        font-size: 15px;
+        width: calc(50% - 20px);
+        height: calc(100% - 20px);
+        padding: 10px;
+    }
+
+    .contentText {
+        width: calc(50% - 20px);
+        height: calc(100% - 20px);
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .radiusMinText, .radiusMaxText {
+        width: 25%;
+        font-size: 12px;
+        margin: 0px 10px 0px 0px;
+    }
+
+    .rentFilterButton {
+        display: flex;
+    }
+
+    .rentCardButton {
+        font-size: 17px;
+        letter-spacing: 1.5px;
+    }
+
+    .infoTab {
+        font-size: 13px;
+    }
+
+
+
+
+
+    /* ABOUT */
+    .photoBlock {
+        width: 30%;
+    }
+
+    .descriptionBlock {
+        width: calc(60% - 20px);
+    }
+
+
+
+
+
+
+
+
+
+    /* SERVICES */
+
+    .servicesBlock {
+        justify-content: flex-start;
+    }
+    .serviceCard {
+        height: 310px;
+        width: calc(33% - 30px);
+        margin: 0px 30px 30px 0px;
+    }
+
+    .serviceCardText {
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        height: calc(30% - 30px);
+        width: calc(100% - 30px);
+        padding: 15px;
+    }
+
+    .serviceCardText2 {
+        font-size: 15px;
+        letter-spacing: 1px;
+        height: calc(15% - 30px);
+        width: calc(100% - 30px);
+        padding: 15px;
+    }
+
+
+
+
+
+
+
+
+
+    /* CONTACTS */
+    .secretaryName, .adresesTitle {
+        font-size: 16px;
+        margin: 0px 0px 5px 0px;
+    }
+    .secretaryPhones a {
+        font-size: 16px;
+        margin: 0px 15px 0px 0px;
+    }
+    .adresesAnnotation {
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .rentFilterBlock {
+        width: 100%;
+    }
+
+    .filterFixedBlock {
+        position: relative;
+        width: 100%;
+        top: 0;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .filterSearch {
+        width: 220px;
+    }
+
+    .filterOptions {
+        flex-direction: column;
+    }
+
+    .brandModelBlock {
+        width: 20%;
+        margin: 0px 50px 0px 0px;
+    }
+
+    .garbageBlock {
+        width: 25%;
+        margin: 0px 50px 0px 0px;
+    }
+
+    .minMaxRadiusBlock {
+        margin: 0;
+    }
+
+    .sizesBlock {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .headerContent, .page, .footerContent {
+        max-width: 90vw;
+    }
+
+    .aboutBlock:last-child {
+        margin: 30px 0px 0px 0px;
+    }
+
+    .pageContentBlock {
+        margin: 90px 0px 0px 0px;
+    }
+
+    .headerBlock:nth-child(2) {
+        width: 70%;
+    }
+
+    .navLi {
+        font-size: 15px;
+    }
+
+    .page.mainPage {
+        min-height: calc(80vh - 75px);
+        margin: 100px 0px 50px 0px;
+    }
+
+    .footerContent {
+        height: fit-content;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .footerBlock {
+        margin: 0px 40px 10px 0px;
+    }
+    .footerCenterBlock {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+
+
+
+    /* RENTPAGE */
+    .rentCard {
+        width: calc(40% - 30px);
+        min-height: 430px;
+    }
+
+    .rentCard:nth-child(3n) {
+        margin: 0px 30px 50px 0px;
+    }
+
+    .rentCardButton {
+        height: 60px;
+        min-height: 60px;
+    }
+
+    .infoTab {
+        font-size: 13px;
+        align-items: center;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .conditionsFrame {
+        width: 565px;
+    }
+
+    .numberFrame , .mailFrame {
+        font-size: 14px;
+    }
+
+    .rentCardOpenedContainer {
+        margin: 150px 0px 50px 0px;
+    }
+
+    .rentCardsBlock {
+        margin: 20px 0px 50px 0px;
+    }
+    
+
+
+
+
+
+
+
+    /* ABOUT */
+    .aboutBlock {
+        flex-direction: column;
+    }
+
+    .photoBlock {
+        width: 300px;
+        height: 400px;
+        min-height: unset;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .photoBlock h3 {
+        font-size: 15px;
+        letter-spacing: 1px;
+        transform: translate(calc(100% + 20px), calc(0% + 10px));
+    }
+
+    .descriptionBlock {
+        width: calc(70% - 0px);
+        margin: 0;
+    }
+
+    .descriptionBlock2 {
+        width: 100%;
+    }
+
+    .pageTitle {
+        font-size: 40px;
+    }
+
+
+
+    /* ABOUT */
+    .serviceCard {
+        height: 400px;
+    }
+
+
+
+
+
+    /* CONTACTS */
+    .contactsPageContent{
+        flex-wrap: wrap;
+    }
+
+    .contactsPage .pageContentBlock {
+        flex-direction: column;
+    }
+
+    .contactsBlock:nth-child(2) {
+        margin: 60px 0px 0px 0px;
+    }
+
+
+
+
+
+    /* FILTER */
+    .brandModelBlock {
+        width: 100%;
+        margin: 0px 0px 30px 0px;
+    }
+
+    .garbageBlock {
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .minMaxRadiusBlock {
+        margin: 0px 0px 20px 0px;
+    }
+
+    .header {
+        position: fixed;
+    }
+
+    .pageContent {
+        min-height: unset;
+        height: 100%;
+    }
+
+    body {
+        overflow-y: auto;
+    }
+
+    .page404 {
+        height: calc(100vh - 119px);
+    }
+
+}
+
+@media (max-width: 980px) {
+
+    .descriptionBlock {
+        width: 100%;
+        margin: 0;
+    }
+
+    .headerBlock:nth-child(2) {
+        width: 75%;
+    }
+    .navLi {
+        margin: 0px 10px 0px 0px;
+    }
+
+    .footerBlock .adress {
+        font-family: NunitoSans;
+        font-size: 16px;
+    }
+
+    .rentCard {
+        justify-content: space-between;
+        width: calc(50% - 30px);
+    }
+    .rentCard:nth-child(2n) {
+        margin: 0px 0px 50px 0px;
+    }
+
+    .rentCardOpened {
+        flex-direction: column;
+    }
+
+    .rentCardPhoto {
+        min-height: 150px;
+    }
+    .rentCardButton {
+        height: 50px;
+    }
+
+    .infoBlock {
+        width: 100%;
+    }
+
+    .photosBlock {
+        width: 60vw;
+        height: 40vw;
+        margin: 0px 0vw 50px 0px;
+        max-height: unset;
+    }
+
+    .infoTextCardBlock {
+        flex-direction: column;
+        min-height: 245px;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }    
+
+    .infoTitle {
+        font-size: 24px;
+    }
+
+    .servicesTitle {
+        font-size: 24px;
+    }
+
+    .infoTitle br {
+        display: none;
+    }
+
+
+
+
+    /* ABOUT */
+    .serviceCard {
+        width: calc(50% - 30px);
+        height: 400px;
+    }
+
+    .serviceCard:nth-child(2n) {
+        width: calc(50% - 30px);
+        margin: 0px 0px 30px 0px;
+    }
+
+
+
+
+
+    /* CONTACTS */
+    .contactsBlock:nth-child(1) {
+        width: 100%;
+        margin: 0;
+    }
+
+    .contactsBlock:nth-child(2) {
+        width: 100%;
+        margin: 80px 0px 50px 0px;
+    }
+
+    .filterOptions {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .page.mainPage {
+        flex-direction: column;
+        min-height: calc(100vh - 80px);
+        margin: 50px 0px 20px 0px;
+    }
+
+    .pageContentBlock {
+        margin: 70px 0px 0px 0px;
+    }
+
+    .mainPageLeftContentBlock {
+        margin: 0px 0px 0px 0px;
+        justify-content: flex-start;
+        height: auto;
+    }
+
+    .mainPageRightContentBlock {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        pointer-events: auto;
+    }
+
+    .buttonBlock {
+        margin: 0px 15px 0px 0px;
+    }
+
+    .partnersBlock {
+        align-items: center;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .partnerLogo {
+        width: 110px;
+        height: 40px;
+    }
+
+    .titleBlock .title {
+        font-size: 30px;
+    }
+
+    .titleBlock .city {
+        font-size: 30px;
+        margin: 7px 0px 0px 0px;
+    }
+
+    .titleBlock {
+        margin: 0px 0px 30px 0px;
+    }
+
+    .headerCircle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        right: 2vw;
+        top: 2vw;
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.9);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        z-index: 11;
+    }
+
+    .headerCircle .line {
+        width: 30px;
+        height: 1px;
+        background-color: white;
+        margin: 3px 0px;
+        transition: 0.5s;
+    }
+
+    .headerCircle .line:nth-child(1) {
+        transform: rotate(0deg) scaleX(1);
+    }
+    .headerCircle .line:nth-child(2) {
+        transform: rotate(0deg) scaleX(1);
+    }
+    .headerCircle .line:nth-child(3) {
+        position: absolute;
+        transform: rotate(0deg) scaleX(0);
+    }
+    .headerCircle .line:nth-child(3) {
+        transform: rotate(0deg) scaleX(1);
+    }
+
+    .headerCircle.active .line:nth-child(1) {
+        transform: rotate(0deg) scaleX(0);
+    }
+    .headerCircle.active .line:nth-child(2) {
+        transform: rotate(45deg) scaleX(1);
+    }
+    .headerCircle.active .line:nth-child(3) {
+        transform: rotate(-45deg) scaleX(1);
+    }
+    .headerCircle.active .line:nth-child(4) {
+        transform: rotate(0deg) scaleX(0);
+    }
+
+    .headerOverlay {
+        display: flex;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0);
+        pointer-events: none;
+        transition: 0.5s;
+        z-index: 10;
+    }
+    .headerOverlay.active {
+        background: rgba(0, 0, 0, 0.9);
+        pointer-events: auto;
+    }
+
+    .header {
+        position: fixed;
+        left: unset;
+        right: 0;
+        top: 0;
+        width: calc(180px - 30px);
+        height: calc(100% - 30px);
+        padding: 30px;
+        transform: translate(105%, 0);
+        transition: 0.5s;
+    }
+    .header.active {
+        transform: translate(0%, 0);
+    }
+    .headerContent {
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navigationHeader {
+        flex-direction: column;
+    }
+
+    .headerBlock:nth-child(1) {
+        width: 100%;
+    }
+
+    .logoHeader {
+        width: 80px;
+        height: 30px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .navLi {
+        font-size: 18px;
+        margin: 0px 0px 7px 0px;
+    }
+
+
+
+
+
+    /* RENTCARDPAGE */
+    .rentCard {
+        min-height: 360px;
+        height: auto;
+    }
+
+    .rentCardOpenedContainer {
+        margin: 70px 0px 50px 0px;
+    }    
+
+    .contentText {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .contentName {
+        font-size: 14px;
+    }
+
+    .rentCardButton {
+        font-size: 15px;
+    }
+
+    .photosBlock {
+        width: 70vw;
+        height: 40vw;
+    }
+
+    .infoTitle {
+        font-size: 20px;
+    }
+
+    .infoTabTitle {
+        font-size: 32px;
+    }
+
+    .charColumn {
+        flex-direction: column;
+        margin: 0px 0px 10px 0px;
+        width: 100%;
+    }
+
+    .noResultP {
+        flex-wrap: wrap;
+    }
+
+    .noResultBlock br{
+        display: none;
+    }
+
+
+
+
+
+
+
+    /* ABOUT */
+    .servicesBlock {
+        justify-content: space-between;
+    }
+
+    .aboutPage .pageContentBlock {
+        margin: 0;
+    }
+
+    .servicesPage .pageContentBlock {
+        margin: 0;
+    }
+    .contactsPage .pageContentBlock {
+        margin: 0;
+    }
+
+
+
+
+
+
+    .buttonBlock {
+        display: flex;
+    }
+
+    .rentFilterBlock {
+        width: 100%;
+    }
+
+    .filterFixedBlock {
+        position: relative;
+        width: 100%;
+    }
+
+    .advantagesBlock {
+        display: none;
+    }
+
+    .page {
+        margin: 70px 0px;
+    }
+    .page.mainPage {
+        height: 60vh;
+        transition: 0.25s;
+    }
+
+    .characteristicBlock {
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media (max-width: 640px) {
+
+    .headerContent, .page, .footerContent {
+        max-width: 100%;
+    }
+
+    .page.mainPage {
+        flex-direction: column;
+        justify-content: space-between;
+        width: calc(100% - 10vw);
+        min-height: 80dvh;
+        padding: 0px 5vw 0px 5vw;
+        margin: 40px 0px 20px 0px;
+    }
+
+    .mainPageRightContentBlock {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .buttonBlock {
+        margin: 0px 0px 5px 0px;
+    }
+
+    .partnerLogo {
+        align-items: center;
+    }
+
+    .partnerLogo:nth-child(2) {
+        height: 30px;
+    }
+    .partnerLogo:nth-child(3) {
+        height: 17px;
+    }
+
+    .footerBlock {
+        margin: 0px 40px 20px 0px;
+    }
+
+    .filterFixedBlock {
+        padding: 0px 5vw;
+        width: calc(100% - 10vw);
+    }
+
+
+
+
+    /* RENTPAGE */
+    .rentCardsBlock {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 0px 0px 10px 5vw;
+        width: calc(100% - 5vw);
+    }
+
+    .rentCardHelp {
+        display: flex;
+        font-family: ManifoldExtended;
+        font-size: 3.7vw;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 0.5vw;
+        color: white;
+        margin: 0px 0px 5px 0px;
+        padding: 0px 0px 0px 5vw;
+        width: calc(100% - 5vw);
+    }
+
+    .rentCard {
+        width: 310px;
+        min-width: 310px;
+    }
+
+    .rentCard, .rentCard:nth-child(2n), .rentCard:nth-child(3n) {
+        margin: 0px 50px 0px 0px;
+    }
+
+    .rentCardOpened {
+        flex-direction: column;
+        align-self: center;
+        max-width: 90vw;
+    }
+
+    .noResultBigBlock {
+        flex-direction: column;
+        place-self: center;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% - 5vw);
+        padding: 0px 5vw 0px 0px;
+    }
+
+    .noResultP .clearFiltersBtn {
+        margin: 5px 0px 0px 0px;
+    }
+
+
+
+
+
+
+
+    .photosBlock {
+        flex-direction: column;
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: 65vw;
+        margin: 0px 0px 40px 0px;
+    }
+
+    .navArrowPrev .overlay {
+        opacity: 0.8;
+    }
+    .navArrowNext .overlay {
+        opacity: 0.8;
+    }
+
+    .infoTextCardBlock {
+        left: 0;
+        width: 100%;
+    }
+
+    .infoTabs {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .infoTab {
+        justify-content: center;
+        text-align: center;
+        font-size: 16px;
+        padding: 0;
+        width: 320px;
+        height: 40px;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .documentation .infoTabTitle {
+        font-size: 24px;
+    }
+
+    .conditionsFrame {
+        width: 100%;
+        height: 100px;
+        margin: 15px 0px 80px 0px;
+        flex-direction: column;
+        border: none;
+    }
+
+    .contactsPage .conditionsFrameBlock {
+        flex-direction: column;
+        align-items: flex-start;
+        border: none;
+    }
+
+    .contactsPage .numberFrame {
+        justify-content: flex-start;
+    }
+    .contactsPage .mailFrame {
+        justify-content: flex-start;
+        border-left: none;
+    }
+
+    .contactsPage .conditionsFrame {
+        height: auto;
+        align-items: flex-start;
+    }
+    .contactsPage .messengersBlock {
+        min-height: 50px;
+        left: -10px;
+    }
+
+    .conditionsFrameBlock {
+        min-height: 40px;
+        border: 1px solid white;
+    }
+    .conditionsFrame .tgFrame, .conditionsFrame .whatsAppFrame {
+    }
+
+    .tgFrame {
+        min-width: 49px;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+    .whatsAppFrame {
+        border-left: none;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+
+    .contactsPage .whatsAppFrame {
+        border: none;
+    }
+    .contactsPage .tgFrame {
+        border: none;
+    }
+
+
+
+
+
+
+
+
+
+    /* ABOUT */
+    .page.aboutPage {
+        max-width: 90vw;
+    }
+    .photoBlock h3 {
+        position: relative;
+        transform: none;
+    }
+
+
+
+
+
+
+
+    /* SERVICES */
+    .page.servicesPage {
+        max-width: 90vw;
+    }
+    .servicesBlock {
+        justify-content: center;
+    }
+
+    .serviceCard, .serviceCard:nth-child(2n) {
+        width: 350px;
+        height: fit-content;
+        margin: 0px 0px 80px 0px;
+    }
+
+    .serviceCardPhoto {
+        width: 100%;
+        height: 210px;
+    }
+
+    .servicesTitle {
+        text-align: center;
+        justify-content: center;
+    }
+
+
+    .footerContent {
+        padding: 5vw 5vw 7.5vw 5vw;
+        width: calc(100% - 10vw);
+    }
+
+
+
+
+
+
+
+    /* CONTACTS */
+    .page.contactsPage {
+        max-width: 90vw;
+    }
+
+    .contactsPageContent {
+        margin: 30px 0px 0px 0px;
+    }
+
+
+
+
+
+
+    .rentCardOpenedContainer .pageNavigationBlock {
+        padding: 0px 5vw;
+        width: calc(100% - 10vw);
+    }
+}
+
+@media (max-width: 480px) {
+
+    .mainPageLeftContentBlock {
+        justify-content: space-between;
+    }
+    .advantagesBlock {
+        display: none;
+    }
+
+    .titleBlock .title {
+        font-size: 25px;
+    }
+
+    .titleBlock .city {
+        font-size: 25px;
+    }
+
+    .titleBlock .city:before {
+        width: 20px;
+        height: 20px;
+    }
+
+    .advantage {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0px 0px 30px 0px;
+    }
+
+    .advIcon {
+        margin: 0px 0px 4px 0px;
+    }
+
+    .advText br {
+        display: none;
+    }
+
+    .advText {
+        font-size: 18px;
+    }
+
+    .partnerLogo {
+        width: 27vw;
+        height: 8vw;
+    }
+
+    .infoTab {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .conditionsFrame {
+        border: unset;
+        height: auto;
+    }
+
+    .conditionsFrameBlock {
+        flex-direction: column;
+        align-items: flex-start;
+        border: none;
+    }
+    .tgFrame, .whatsAppFrame {
+        height: 50px;
+    }
+    .numberFrame, .mailFrame {
+        width: 100%;
+        height: 30px;
+        justify-content: flex-start;
+        border: none;
+    }
+
+    .conditionsFrame .tgFrame, .conditionsFrame .whatsAppFrame {
+        border: none;
+    }
+
+    .infoTabTitle {
+        font-size: 8vw;
+    }
+
+    .messengersBlock {
+        align-self: flex-start;
+        left: -10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* RENTPAGE */
+    .rentCard {
+        height: auto;
+        width: 72vw;
+        min-width: 72vw;
+        justify-content: space-between;
+    }
+
+    .rentCardOpenedContainer .servicesBlock {
+        padding: 0px 5vw;
+        width: calc(100% - 10vw);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* about */
+    
+    .requisitesBox {
+        width: calc(100% - 50px);
+        height: 100%;
+    }
+
+    .requisitesTitle {
+        font-size: 27px;
+    }
+
+
+
+
+    /* SERVCIES */
+    .pageTitle {
+        font-size: 30px;
+        margin: 0px 0px 5px 0px;
+    }
+
+    .servicesDescription {
+        margin: 0px 0px 50px 0px;
+    }
+
+
+    .serviceCard, .serviceCard:nth-child(2n) {
+        width: 100%;
+    }
+    
+    .contactsBlock:nth-child(2) {
+        margin: 80px 0px 50px 0px;
+    }
+
+
+
+    .contactsPage .numberFrame, .contactsPage .mailFrame {
+        justify-content: flex-start;
+    }
+    .contactsPage .conditionsFrame {
+        flex-direction: column;
+    }
+
+    .contactsPage .conditionsFrame .tgFrame, .contactsPage .conditionsFrame .whatsAppFrame {
+        position: relative;
+        transform: unset;
+        left: 0;
+        width: 50px;
+        height: 50px;
+    }
+}
