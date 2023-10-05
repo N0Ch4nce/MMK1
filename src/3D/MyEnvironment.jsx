@@ -15,7 +15,7 @@ export default function MyEnvironment(props) {
     return <>
     <Environment files={'/backgrounds/environment.hdr'}/>
     <directionalLight ref={ directionalLightRef } {...lightSetting}/>
-    {/* {props.activatedMainPage === true && <EffectComposerComponent {...props}/>} */}
-     <EffectComposerComponent {...props}/>
+    {props.activatedMainPage === true && <EffectComposerComponent {...props}/>}
+     {/* <EffectComposerComponent {...props}/> */}
     </>
 }

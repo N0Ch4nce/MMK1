@@ -41,13 +41,30 @@ export default function MainContent() {
 
   const [windowLoaded, setWindowLoaded] = useState(false)
   const [craneRendered, setCraneRendered] = useState(false)
+  const [websiteReady, setWebsiteReady] = useState(false)
+  const [preloaderOff, setPreloaderOff] = useState(false)
 
   useEffect(() => {
-    setTransition(true)
-    setTimeout(() => {
-      setTransition(false)
-    }, 1500);
+    if (preloaderOff) {
+      setTransition(true)
+      setTimeout(() => {
+        setTransition(false)
+      }, 1500);
+    }
   }, [location.pathname.split('/')[1]])
+
+  useEffect(()=> {
+    if (windowLoaded && craneRendered) {
+      setWebsiteReady(true)
+    }
+  }, [craneRendered])
+
+  useEffect(()=> {
+    setTimeout(() => {
+      setPreloaderOff(true)
+    }, 1000);
+  }, [websiteReady])
+
 
   useEffect(() => {
     setActivePage(location.pathname.split('/')[1])
@@ -63,7 +80,6 @@ export default function MainContent() {
         }
       }, 900)
     }
-    console.log(activePage)
     return setPreviousPage(location.pathname.split('/')[2])
   }, [location.pathname])
 
@@ -111,8 +127,9 @@ export default function MainContent() {
     </SwitchTransition>
   </div>
   <Footer />
+  <div className={preloaderOff ? "backgroundBlock" : "backgroundBlock active"}/>
   <Preloader windowLoaded={windowLoaded} craneRendered={craneRendered}/>
-  <div className={transition ? "transitionBlock active" : "transitionBlock"} >
+  <div className={transition && preloaderOff ? "transitionBlock active" : "transitionBlock"} >
     <div className="transitionLine"/>
     <div className="transitionLine"/>
     <div className="transitionLine"/>

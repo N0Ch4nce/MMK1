@@ -12,6 +12,7 @@ export default function Case3Model(props){
     const ref = useRef()
     const orbitControlsRef = useRef()
     const craneFull = useGLTF('/models/craneNEW.glb')
+    // const craneFull = useGLTF('/models/craneFull3js.glb')
 
     useEffect(() => {
         for (let i = 0; i < craneFull.materials.length; i++) {
@@ -53,8 +54,8 @@ export default function Case3Model(props){
         craneFull.materials.LightMaterial.emissive.b = 0
         craneFull.materials.LightMaterial.emissiveIntensity = 5
         craneFull.materials.LightMaterial.color.r = 5
-        craneFull.materials.LightMaterial.color.g = 2
-        craneFull.materials.LightMaterial.color.b = 2
+        craneFull.materials.LightMaterial.color.g = 4
+        craneFull.materials.LightMaterial.color.b = 4
         craneFull.materials.LightMaterial.toneMapped = false
 
         // GLASS
@@ -68,6 +69,7 @@ export default function Case3Model(props){
         if (props.activatedMainPage === true) {
             camera.position.x = 0
             camera.position.y = 5
+            // camera.position.y = 5
             if (window.innerWidth > 768) {
                 camera.position.z = ((window.innerWidth - 768) / (1920 - 768)) * (6 - 8) + 8;
             }
@@ -75,18 +77,19 @@ export default function Case3Model(props){
                 camera.position.z = 6
             }
             if (window.innerWidth > 768) {
+                ref.current.position.z = 0
                 ref.current.position.x = 8
             }
             if (window.innerWidth <= 768) {
+                ref.current.position.z = -5
                 ref.current.position.x = 5
             }
             ref.current.position.y = 0
-            ref.current.position.z = 0
+            // ref.current.position.z = 0
             ref.current.rotation.y = 0
             camera.lookAt(0, camera.position.y, 0)
+            setMobileTransition(0)
             ref.current.visible = true
-
-            // cameraControlsRef.current?.setTarget(0, camera.position.y, 0, true)
         }
     },[props.activatedMainPage])
 
@@ -105,10 +108,8 @@ export default function Case3Model(props){
             // DESKTOP VERSION 
             if (window.innerWidth > 768 && ref.current != null) {
                 // Model animation
-                // easing.damp(ref.current.position, 'y', -33.5, 3, delta)
                 easing.damp(ref.current.position, 'y', ((window.innerWidth - 768) / (1920 - 768) * (-33.5 - -13) + -13), 3, delta)
 
-                // easing.damp(ref.current.position, 'x', 4, 1.2, delta)
                 easing.damp(ref.current.position, 'x', ((window.innerWidth - 768) / (1920 - 768) * (4 - 2) + 2), 1.2, delta)
 
                 // easing.damp(ref.current.position, 'z', ((camera.position.x - 0) / (-14 - 0)) * (10 - 0) + 0, 0.5, delta)
@@ -124,7 +125,7 @@ export default function Case3Model(props){
             if (window.innerWidth <= 768 && ref.current != null) {
                 if (mobileTransition === 0) {
                     easing.damp(ref.current.position, 'x', 2, 0.5, delta)
-                    easing.damp(ref.current.position, 'y', -27.5, 3, delta)
+                    easing.damp(ref.current.position, 'y', -27.5, 1.5, delta)
                     easing.damp(ref.current.rotation, 'y', 0.65,  2, delta)
                     if (ref.current.position.y <= -25) {
                         if (mobileTransition === 0) {
@@ -133,7 +134,7 @@ export default function Case3Model(props){
                     }
                 }
                 if (mobileTransition === 1) {
-                    easing.damp(ref.current.position, 'x', 6, 3, delta)
+                    easing.damp(ref.current.position, 'x', 6, 1.5, delta)
                     easing.damp(ref.current.position, 'y', -27.5, 3, delta)
                     easing.damp(ref.current.position, 'z', -25,  2, delta)
                 }
@@ -143,20 +144,19 @@ export default function Case3Model(props){
         }
         if (props.activePage != '') {
             // Transition out
-            easing.damp(ref.current.position, 'x', 15, 1, delta)
-            if (ref.current.position.x >= 13) {
+            easing.damp(ref.current.position, 'y', -70, 1, delta)
+            if (ref.current.position.y >= 45) {
                 ref.current.visible = false
-                setMobileTransition(0)
             }
         }
     })
 
     return <>
     <OrbitControls ref={orbitControlsRef} 
-        minAzimuthAngle={window.innerWidth > 768 ? -Math.PI * 0.55 : -Math.PI * ((window.innerWidth - 300) / (768 - 300) * (0.15 - 0.1) + 0.1)}
-        maxAzimuthAngle={window.innerWidth > 768 ? Math.PI * 0.15 : Math.PI * ((window.innerWidth - 300) / (768 - 300) * (0.08 - 0.05) + 0.05)}
-        minPolarAngle={Math.PI * 0.45} // Минимальный угол обзора в радианах (например, 0.1 радиан, чтобы разрешить немножко вниз)
-        maxPolarAngle={Math.PI * 0.57} // Максимальный угол обзора в радианах (например, Math.PI - 0.1 радиан, чтобы разрешить немножко вверх)
+        minAzimuthAngle={window.innerWidth > 768 ? -Math.PI * 0.55 : -Math.PI * ((window.innerWidth - 300) / (768 - 300) * (0.075 - 0.04) + 0.04)}
+        maxAzimuthAngle={window.innerWidth > 768 ? Math.PI * 0.15 : Math.PI * ((window.innerWidth - 300) / (768 - 300) * (0.04 - 0.025) + 0.025)}
+        minPolarAngle={window.innerWidth > 768 ? Math.PI * 0.45 : Math.PI * 0.25} // Минимальный угол обзора в радианах (например, 0.1 радиан, чтобы разрешить немножко вниз)
+        maxPolarAngle={window.innerWidth > 768 ? Math.PI * 0.57 : Math.PI * 0.5} // Максимальный угол обзора в радианах (например, Math.PI - 0.1 радиан, чтобы разрешить немножко вверх)
         target={[0, camera.position.y, 0]}
         enableDamping={true}
         enablePan={false}

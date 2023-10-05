@@ -7,6 +7,7 @@
     height: 100%;
     background-color: rgba(18, 18, 18, 0);
     pointer-events: none;
+    z-index: 99;
 }
 .transitionBlock.active {
     pointer-events: auto;
@@ -95,3 +96,24 @@
         transform: scaleY(0);
     }
 }
+
+
+
+.backgroundBlock {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background: radial-gradient(rgba(57, 58, 58, 1) 0%, rgba(14, 14, 14, 1) ); */
+    background: black;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s 0.25s;
+    z-index: 98;
+  }
+  
+  .backgroundBlock.active {
+    opacity: 1;
+    pointer-events: auto;
+  }

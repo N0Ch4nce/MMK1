@@ -20,7 +20,7 @@ export default function ServicesPage(props) {
                 <p>Мы создаем условия при которых наши клиенты  получают высококачественный круглосуточный сервис на выгодных условиях и с положительным экономическим эффектом.</p>
             </div>
             <ServicesConditionsBlock />
-            {/* <ServicesBlock /> */}
+            <ServicesBlock />
         </div>
     </div>
     </>
