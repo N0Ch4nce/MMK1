@@ -160,7 +160,9 @@ div img {
 }
 
 .navLi {
-  font-size: 15px;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   font-weight: 500;
   margin: 0px 6vw 0px 0px;
   cursor: pointer;
