@@ -68,12 +68,16 @@ export default function RentCardOpened(props) {
 
                         <div className="infoTabs">
                             <div className={activeTab === 0 ? "infoTab active" : "infoTab"}
-                            onClick={() => {setActiveTab(0)}}
-                            >Консультация и заказ</div>
+                            onClick={() => {
+                                setActiveTab(0)
+                            }}
+                            >Характеристики</div>
 
                             <div className={activeTab === 1 ? "infoTab active" : "infoTab"}
-                            onClick={() => {setActiveTab(1)}}
-                            >Характеристики</div>
+                            onClick={() => {
+                                setActiveTab(1)
+                            }}
+                            >Консультация и заказ</div>
 
                             {props.document != "" &&
                             <div className={activeTab === 2 ? "infoTab active" : "infoTab"}
@@ -83,16 +87,17 @@ export default function RentCardOpened(props) {
                         </div>
 
                         {activeTab === 0 ?
+                         <div className="infoTabContent characteristic">
+                            <CharacteristicContent {...props}/>
+                        </div>
+                        : ""}
+
+                        {activeTab === 1 ?
                          <div className="infoTabContent order">
                             <ServicesConditionsBlock />
                         </div>
                         : ""}
 
-                        {activeTab === 1 ?
-                         <div className="infoTabContent characteristic">
-                            <CharacteristicContent {...props}/>
-                        </div>
-                        : ""}
                         {activeTab === 2 ?
                          <div className="infoTabContent documentation">
                             <div className="infoTabTitle">Скачать техническую документацию</div>
