@@ -16,12 +16,15 @@ export const useItems=()=>{
         let tempDocs = [];
         let docs=[];
         querySnapshots.forEach(snap => {           
-            tempDocs = [...tempDocs, snap.data()];
-            docs=[...docs,doc(collectionDb,snap.id)];
+            tempDocs = [...tempDocs, snap.data()];            
+           docs=[...docs,doc(collectionDb,snap.id)];           
         });
-        console.log('ALL DATA🖥️',tempDocs);
-        dispatch(setItemRedux(tempDocs));
-        dispatch(setItemDocsRedux(docs));
+        //console.log('ALL DATA🖥️',tempDocs);
+        if(tempDocs.length){
+            dispatch(setItemRedux(tempDocs));
+            dispatch(setItemDocsRedux(docs));
+        }
+
     } 
 
 

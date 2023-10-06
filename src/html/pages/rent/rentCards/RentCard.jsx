@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useLocation, useNavigate } from "react-router-dom"
 
 export default function RentCard(props) {
@@ -10,13 +10,20 @@ export default function RentCard(props) {
             window.scrollTo(0, 0);
         }
     }
+    const [imgSrc,setImgSrc]=useState('images/rentCardLoading.png')
+    useEffect(()=>{
+        const img = new Image();
+        img.src=props.image[0];
+        img.onload=()=>{setImgSrc(img.src)}
+    },[])
 
     return <>
         <div className="rentCard">
             <div className="rentCardPhoto" onClick={() => {
                 changeLocation(props.cardId)
             }}>
-                <img src={props.image[0]||'images/rentCardLoading.png'} />
+                <img src={imgSrc} />
+                {/* <img src={props.image[0]||'images/rentCardLoading.png'} /> */}
                 
             </div>
             <div className="rentCardContent brand">

@@ -62,7 +62,10 @@ export default function AdminPage() {
 
     const onDeleteDoc=(index)=>{
         if(confirm('Удалить ?')){
-            deleteDoc(itemsDocs[index]).then(()=>getAllItems())
+            deleteDoc(itemsDocs[index]).then(()=>{
+                getAllItems();
+                toast.success('Позиция удалена')
+            })
         }
     }
 
