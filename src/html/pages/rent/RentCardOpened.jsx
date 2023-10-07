@@ -3,11 +3,14 @@ import ServicesBlock from "../services/ServicesBlock.jsx";
 import ServicesConditionsBlock from "../services/ServicesConditionsBlock.jsx";
 import CharacteristicContent from "./CharacteristicContent.jsx";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux"
 
 export default function RentCardOpened(props) {
     const navigate = useNavigate()
     const [activeTab, setActiveTab] = useState(0)
     const [activeImage, setActiveImage] = useState(0)
+    const {mainPhone,whatsapp,telegram}=useSelector(state=>state.about)
+
     return <>
         <div className="rentCardOpenedContainer">
             <div className="pageNavigationBlock">
@@ -65,52 +68,9 @@ export default function RentCardOpened(props) {
                         </div>
                     </div>
                     <div className="infoTabBlock">
-
-                        <div className="infoTabs">
-                            <div className={activeTab === 0 ? "infoTab active" : "infoTab"}
-                            onClick={() => {
-                                setActiveTab(0)
-                            }}
-                            >Характеристики</div>
-
-                            <div className={activeTab === 1 ? "infoTab active" : "infoTab"}
-                            onClick={() => {
-                                setActiveTab(1)
-                            }}
-                            >Консультация и заказ</div>
-
-                            {props.document != "" &&
-                            <div className={activeTab === 2 ? "infoTab active" : "infoTab"}
-                            onClick={() => {setActiveTab(2)}}
-                            >Тех. документация</div>
-                            }
-                        </div>
-
-                        {activeTab === 0 ?
                          <div className="infoTabContent characteristic">
                             <CharacteristicContent {...props}/>
                         </div>
-                        : ""}
-
-                        {activeTab === 1 ?
-                         <div className="infoTabContent order">
-                            <ServicesConditionsBlock />
-                        </div>
-                        : ""}
-
-                        {activeTab === 2 ?
-                         <div className="infoTabContent documentation">
-                            <div className="infoTabTitle">Скачать техническую документацию</div>
-                            <div className="documentationBlock">
-                               <button className="documentationButton" onClick={()=> {
-                                window.open(props.document, '_blank');
-                               }}>
-                                    <div className="docIcon" />
-                                    <div className="docText">Скачать PDF</div>
-                                </button>
-                            </div>
-                        </div>
-                        : ""}
                     </div>
                 </div>
             </div>

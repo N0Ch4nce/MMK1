@@ -1,6 +1,20 @@
+import { useSelector } from "react-redux"
+
 export default function CharacteristicContent(props) {
+    const {mainPhone,whatsapp,telegram}=useSelector(state=>state.about)
+
     return <>
-    <div className="infoTabTitle">Характеристики</div>
+    <div className="infoTabTitle">
+        <div className="infoTabTitleText">Характеристики</div>
+        <div className="documentationBlock">
+            <button className="documentationButton" onClick={()=> {
+            window.open(props.document, '_blank');
+            }}>
+                <div className="docIcon" />
+                <div className="docText">Скачать PDF</div>
+            </button>
+        </div>
+    </div>
     <div className="characteristicBlock">
         <div className="charColumn weight">
             <div className="charName">Грузоподъемность</div>
@@ -35,6 +49,10 @@ export default function CharacteristicContent(props) {
                 <div className="charText2">{`${props.height} м.`}</div>
             </div>
         </div>
+    </div>
+    <div className="rentCardOpenedOrderBlock">
+        <div className="conditionsDescription">Для получения консультации, заказа и индивидуальных условий сотрудничества,<br /> свяжитесь с нашим специалистом:</div>
+        <a href={`tel:${mainPhone.replaceAll(/[-() /\\]/g,'')}`} target="_blank" className="consultButton">{mainPhone}</a>
     </div>
     </>
 }

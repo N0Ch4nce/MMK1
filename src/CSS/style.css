@@ -9,7 +9,7 @@ body{
   align-items: center;
   background: radial-gradient(rgba(57, 58, 58, 1) 0%, rgba(14, 14, 14, 1) );
   background-attachment: fixed;
-  font-family: NunitoSans;
+  font-family: Montserrat;
   color: rgba(255, 255, 255, 1);
   overflow: hidden;
   overflow-y: hidden;
@@ -68,12 +68,10 @@ p{
   white-space: pre-line;
   margin: 0px 0px 1vw 0px;
   font-size: 0.9vw;
-  letter-spacing: 0.05vw;
 }
 
 li {
   font-size: 0.8vw;
-  letter-spacing: 0.04vw;
   margin: 0px 0px 0.25vw 0px;
 }
 li:last-child {
@@ -82,12 +80,12 @@ li:last-child {
 
 h1 {
   display: flex;
-  font-family: ManifoldExtended;
+  font-family: Akrobat;
 }
 
 h2 {
   display: flex;
-  font-family: ManifoldExtended;
+  font-family: Akrobat;
 }
 
 img {
@@ -128,7 +126,8 @@ div img {
   width: 100%;
   height: 75px;
   background: linear-gradient( to right, rgba(33, 32, 32, 1), rgba(18, 12, 12, 1), rgba(18, 12, 12, 1) );
-  font-family: ManifoldExtended;
+  font-family: Akrobat;
+  font-weight: 600;
   z-index: 10;
 }
 
@@ -163,7 +162,7 @@ div img {
   font-size: 17px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: 500;
+  font-weight: 700;
   margin: 0px 6vw 0px 0px;
   cursor: pointer;
 }
@@ -187,7 +186,7 @@ div img {
 /* FOOTER */
 
 .footer {
-  font-family: ManifoldExtended;
+  font-family: Akrobat;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -230,7 +229,7 @@ div img {
 }
 
 .mailIcon {
-  top: 1px;
+  top: 5px;
   width: 13px;
   height: 13px;
   margin: 0px 5px 0px 0px;
@@ -243,15 +242,16 @@ div img {
 .footerBlock > * {
   margin: 0px 0px 0.25vw 0px;
   letter-spacing: 0.05vw;
-  font-size: 13px;
+  font-size: 17px;
 }
 .footerBlock > *:last-child {
   margin: 0px;
 }
 .footerBlock.contacts3 > * {
-  font-family: NunitoSans;
+  font-family: Montserrat;
+  font-size: 13px;
   letter-spacing: 0px;
-  line-height: 1.3;
+  line-height: 1.65;
 }
 .mainPhone {
   color: var(--mainColor);
@@ -261,6 +261,7 @@ div img {
 .footerBlock.lavaweb {
   flex-direction: row;
   align-self: center;
+  font-family: ManifoldExtended;
   border: 1px solid white;
   padding: 17px 15px 12px 15px;
   margin: 0;
@@ -352,22 +353,22 @@ div img {
 }
 
 .titleBlock {
-  font-family: ManifoldExtended;
+  font-family: Akrobat;
   flex-direction: column;
-  font-weight: 600;
+  font-weight: 800;
   margin: 0px 0px 40px 0px;
 }
 .titleBlock .title {
+  text-transform: uppercase;
   font-size: 2.5vw;
-  font-weight: 600;
-  letter-spacing: 0.15vw;
+  letter-spacing: 1px;
+  font-weight: 800;
   line-height: 1;
   margin: 0;
 }
 .titleBlock .city {
   font-size: 2.5vw;
-  font-weight: 600;
-  letter-spacing: 0.15vw;
+  font-weight: 800;
   color: var(--mainColor);
   align-items: center;
   margin: 1vw 0px 0px 0px;
@@ -397,9 +398,11 @@ div img {
   margin: 0px 0px 0px 0px;
 }
 .advText {
+  font-family: Akrobat;
+  font-weight: 600;
   font-size: 0.9vw;
-  font-weight: 500;
-  letter-spacing: 0.06vw;
+  letter-spacing: 0.04vw;
+  text-transform: uppercase;
 }
 .advIcon {
   width: 0.75vw;
@@ -453,10 +456,11 @@ div img {
 /* ABOUT */
 
 .pageTitle {
-  font-family: ManifoldExtended;
+  font-family: 'Akrobat';
   font-size: 2.2vw;
-  font-weight: 600;
-  letter-spacing: 0.1vw;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.05vw;
 }
 
 .aboutBlock {
@@ -493,13 +497,14 @@ div img {
 }
 
 .photoBlock h3 {
-  font-family: ManifoldExtended;
+  font-family: Akrobat;
   font-size: 0.75vw;
   font-weight: 500;
   letter-spacing: 0.075vw;
+  text-transform: uppercase;
   position: absolute;
   bottom: 0;
-  transform: translate(0px, calc(100% + 1.25vw));
+  transform: translate(calc(100% + 105px), calc(0% + 10px));
 }
 
 .aboutBlock:last-child {
@@ -559,7 +564,7 @@ div img {
 /* SERVICES */
 .servicesDescription {
   flex-direction: column;
-  font-family: NunitoSans;
+  font-family: Montserrat;
   font-weight: 400;
   margin: 2vw 0px 2vw 0px;
 }
@@ -574,10 +579,10 @@ div img {
 }
 
 .conditionsTitle {
-  font-family: ManifoldExtended;
+  font-family: Akrobat;
   font-size: 1.4vw;
   font-weight: 600;
-  letter-spacing: 0.075vw;
+  letter-spacing: 0.025vw;
   margin: 0px 0px 0.5vw 0px;
 }
 
@@ -614,10 +619,10 @@ div img {
   align-items: center;
   justify-content: center;
   width: 50%;
-  font-family: ManifoldExtended;
+  font-family: Akrobat;
   font-size: 1vw;
   font-weight: 800;
-  letter-spacing: 0.05vw;
+  letter-spacing: 0.025vw;
 }
 .mailFrame {
   align-items: center;
@@ -625,10 +630,11 @@ div img {
   width: 50%;
   height: 100%;
   border-left: 1px solid white;
-  font-family: ManifoldExtended;
-  font-size: 0.8vw;
+  font-family: Akrobat;
+  text-transform: uppercase;
+  font-size: 1vw;
   font-weight: 800;
-  letter-spacing: 0.05vw;
+  letter-spacing: 0.025vw;
 }
 .whatsAppFrame {
   min-width: 2.25vw;
@@ -655,7 +661,7 @@ div img {
   height: 20vw;
   margin: 0px 0px 2vw 0px;
   border: 1px solid white;
-  font-family: ManifoldExtended;
+  font-family: Akrobat;
 }
 
 .serviceCardPhoto {
@@ -670,8 +676,9 @@ div img {
   height: 102%;
 }
 .serviceCardText {
-  font-size: 1.1vw;
+  font-size: 1.2vw;
   letter-spacing: 0.06vw;
+  text-transform: uppercase;
   font-weight: 800;
   height: calc(30% - 2vw);
   width: calc(100% - 2vw);
@@ -728,8 +735,10 @@ div img {
 }
 
 .secretaryName, .adresesTitle {
-  font-family: ManifoldExtended;
-  font-size: 0.9vw;
+  font-family: Akrobat;
+  text-transform: uppercase;
+  font-size: 1vw;
+  letter-spacing: 0.025vw;
   font-weight: 800;
   margin: 0px 0px 0.1vw 0px
 }
@@ -845,8 +854,8 @@ div img {
   width: calc(50% - 0.6vw);
   height: calc(100% - 0.6vw);
   padding: 0.3vw;
-  font-family: ManifoldExtended;
-  font-size: 0.8vw;
+  font-family: 'Akrobat';
+  font-size: 1vw;
   font-weight: 800;
 }
 
@@ -855,9 +864,11 @@ div img {
 }
 
 .radiusMinText , .radiusMaxText {
+  font-family: ManifoldExtended;
   align-items: center;
   width: 40%;
   font-size: 0.65vw;
+  letter-spacing: 1px;
   margin: 0px 0.65vw 0px 0px;
 }
 .radiusMinNumber, .radiusMaxNumber {
@@ -873,8 +884,9 @@ div img {
   align-items: center;
   width: 100%;
   height: 3.3vw;
-  font-family: ManifoldExtended;
-  font-size: 0.9vw;
+  font-family: Akrobat;
+  font-size: 1.1vw;
+  text-transform: uppercase;
   letter-spacing: 0.05vw;
   font-weight: 800;
   color: white;
@@ -1060,6 +1072,7 @@ div img {
 .infoTabBlock {
   flex-direction: column;
   height: auto;
+  margin: 30px 0px 0px 0px;
 }
 .infoTabs {
   margin: 3vw 0px 1vw 0px;
@@ -1099,10 +1112,13 @@ div img {
   pointer-events: auto;
 }
 .infoTabTitle {
-  font-family: ManifoldExtended;
+  align-items: center;
+  font-family: Akrobat;
   font-size: 2vw;
+  letter-spacing: 0.025vw;
+  text-transform: uppercase;
   font-weight: 600;
-  margin: 0px 0px 0.5vw 0px;
+  margin: 0px 0px 1vw 0px;
 }
 
 .charColumn{
@@ -1111,10 +1127,11 @@ div img {
 }
 
 .charName {
-  font-family: ManifoldExtended;
+  font-family: 'Akrobat';
+  text-transform: uppercase;
   font-size: 0.9vw;
   font-weight: 600;
-  letter-spacing: 0.05vw;
+  letter-spacing: 0.025vw;
   margin: 0px 0px 0.25vw 0px;
 }
 
@@ -1139,9 +1156,10 @@ div img {
 }
 
 .infoTitle {
-  font-family: ManifoldExtended;
+  font-family: Akrobat;
   font-size: 2vw;
-  font-weight: 600;
+  text-transform: uppercase;
+  font-weight: 700;
   margin: 0px 0px 2vw 0px;
 }
 
@@ -1175,18 +1193,41 @@ button:hover {
 }
 
 .docText {
-  font-family: ManifoldExtended;
+  font-family: Montserrat;
   font-size: 0.9vw;
   font-weight: 600;
   color: white;
 }
 
 .servicesTitle {
-  font-family: ManifoldExtended;
+  font-family: Akrobat;
   font-size: 2vw;
   letter-spacing: 0.1vw;
-  font-weight: 600;
+  font-weight: 700;
+  text-transform: uppercase;
   margin: 8vw 0px 0px 0px;
+}
+
+.infoTabTitleText {
+  margin: 0px 50px 0px 0px;
+}
+
+.characteristicBlock {
+  margin: 0px 0px 50px 0px;
+}
+
+.rentCardOpenedOrderBlock {
+  flex-direction: column;
+}
+
+.consultButton {
+  font-family: Montserrat;
+  width: fit-content;
+  padding: 15px 35px;
+  background-color: rgba(255, 80, 0, 1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 10px 0px 0px 0px;
+  font-weight: 600;
 }
 
 
@@ -1279,7 +1320,7 @@ button:hover {
 
 .filterSearch input {
   width: 78%;
-  font-family: NunitoSans;
+  font-family: Montserrat;
   color: white;
   opacity: 1;
   background: none;
@@ -1288,7 +1329,7 @@ button:hover {
 }
 
 .filterSearch input::placeholder {
-  font-family: ManifoldExtended;
+  font-family: Montserrat;
   font-size: 15px;
   letter-spacing: 1px;
   color: white;
@@ -1332,7 +1373,7 @@ button:hover {
 }
 
 .filterOptions select option {
-  font-family: NunitoSans;
+  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   background-color: black;
@@ -1362,10 +1403,11 @@ button:hover {
 }
 
 h4 {
-  font-family: ManifoldExtended;
-  font-size: 17px;
-  letter-spacing: 1px;
-  font-weight: 800;
+  font-family: 'Akrobat';
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  text-transform: uppercase;
   color: white;
   margin: 0;
 }
@@ -1378,9 +1420,9 @@ h4 {
   border: 1px solid rgba(255, 255, 255, 1);
   color: white;
   margin: 0px 5px 5px 0px;
-  font-family: ManifoldExtended;
+  font-family: Montserrat;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
 }
 
@@ -1442,14 +1484,15 @@ h4 {
 
 .brandFilterTitle, .modelFilterTitle {
   width: fit-content;
-  font-family: ManifoldExtended;
-  font-size: 17px;
+  font-family: 'Akrobat';
+  font-size: 20px;
   letter-spacing: 1px;
-  font-weight: 800;
+  font-weight: 600;
   color: rgba(255, 255, 255, 1);
   cursor: pointer;
   margin: 0px 0px 5px 0px;
 }
+
 .brandFilterTitle:after , .modelFilterTitle:after {
   content: '';
   display: flex;

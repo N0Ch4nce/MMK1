@@ -119,3 +119,49 @@
     font-weight: 600;
     font-style: normal;
 }
+
+
+
+
+@font-face {
+    font-family: Akrobat;
+    src: url('/fonts/akrobat/Akrobatthin.ttf') format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: Akrobat;
+    src: url('/fonts/akrobat/Akrobatlight.ttf') format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: Akrobat;
+    src: url('/fonts/akrobat/Akrobat.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Akrobat;
+    src: url('/fonts/akrobat/Akrobatsemibold.ttf') format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: Akrobat;
+    src: url('/fonts/akrobat/Akrobatbold.ttf') format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: Akrobat;
+    src: url('/fonts/akrobat/Akrobatextrabold.ttf') format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: Akrobat;
+    src: url('/fonts/akrobat/Akrobatblack.ttf') format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}

@@ -155,7 +155,7 @@ export default function AdminPage() {
 
     return (
         <div style={{ display: "flex", flexDirection: 'column' }}>           
-            <div className={styles.adminTitle}>Страница администратора</div>
+            <div className={styles.adminTitle}>Панель администратора</div>
 
             {
                 !isAuth
