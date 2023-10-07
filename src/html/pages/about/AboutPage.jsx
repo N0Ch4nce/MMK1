@@ -5,6 +5,9 @@ import { useSelector } from "react-redux";
 import styles from '../admin/admin.module.css';
 import { useItems } from "../../../hooks/useItems";
 
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css';
+
 
 export default function AboutPage(props) {
     const navigate = useNavigate();
@@ -55,12 +58,12 @@ export default function AboutPage(props) {
 
 
 
-    useEffect(()=>{
-        if(!isAuth){
-            block1.current.innerHTML=field1;
-            block2.current.innerHTML=field2;
-        }        
-    },[field1,isAuth])
+    // useEffect(()=>{
+    //     if(!isAuth){
+    //         block1.current.innerHTML=field1;
+    //         block2.current.innerHTML=field2;
+    //     }        
+    // },[field1,isAuth])
     const {getAllItems} = useItems();
     
   
@@ -95,17 +98,31 @@ export default function AboutPage(props) {
                     </div>
                     
 
-                    {isAuth?<textarea className={`descriptionBlock ${styles.textField}`}  id="editorjs" value={field1State||field1} onChange={event=>setField1State(event.target.value)} disabled={!isAuth} />
-                    :<div className={`descriptionBlock `} ref={block1} id="editorjs" value={field1State||field1} onChange={event=>setField1State(event.target.value)} disabled={!isAuth} ></div>}
+                    {/* {isAuth?<textarea className={`descriptionBlock ${styles.textField}`}  id="editorjs" value={field1State||field1} onChange={event=>setField1State(event.target.value)} disabled={!isAuth} />
+                    :<div className={`descriptionBlock `} ref={block1} id="editorjs" value={field1State||field1} onChange={event=>setField1State(event.target.value)} disabled={!isAuth} ></div>} */}                       
+                    
+                    {
+                        isAuth
+                            ? <div className={`descriptionBlock ${styles.textField}`}  ><ReactQuill theme="snow"  value={field1State} onChange={setField1State} /></div>
+                            : <div className="descriptionBlock" style={{ display: 'inline' }} dangerouslySetInnerHTML={{ __html: field1State }} />
+                    }
 
                 </div>
                 <div className="aboutBlock">
 
-                    {
+                    {/* {
                         isAuth
                         ?<textarea className={`descriptionBlock2 ${styles.textField}`}  value={field2State||field2} onChange={event=>setField2State(event.target.value)} disabled={!isAuth}/>
                         :<div className={`descriptionBlock2`} ref={block2} ></div>
+                    } */}
+
+{
+                        isAuth
+                            ? <div  className={`descriptionBlock2 ${styles.textField}`}  ><ReactQuill theme="snow"  value={field2State} onChange={setField2State} /></div>
+                            : <div className="descriptionBlock2"  dangerouslySetInnerHTML={{ __html: field1State }} />
                     }
+                    
+                  
                     
 
                    

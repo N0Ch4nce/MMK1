@@ -113,6 +113,15 @@
     font-weight: 500;
     letter-spacing: 0.075vw;
     line-height: 150%;
+    display: flex;
+    flex-direction: column;
+}
+.textField>*{
+  display: flex !important;
+  flex-direction: column;
+}
+.textField>div>div{
+  display: block;
 }
 
 
