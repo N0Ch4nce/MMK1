@@ -15,10 +15,10 @@ export default function ServicesPage(props) {
                 <div className="pageNav active">Услуги</div>
             </div>
             <div className="pageTitle">Наши услуги</div>
-            <div className="servicesDescription">
+            {/* <div className="servicesDescription">
                 <p>В процессе развития компания расширила объем предоставляемых услуг. <br/> Мы можем предложить нашим клиентам спектор самых необходимых услуг высокого качества от специалистов с опытом работы более 10 лет.</p>
                 <p>Мы создаем условия при которых наши клиенты  получают высококачественный круглосуточный сервис на выгодных условиях и с положительным экономическим эффектом.</p>
-            </div>
+            </div> */}
             <ServicesConditionsBlock />
             <ServicesBlock />
         </div>
