@@ -523,7 +523,7 @@
     .photoBlock h3 {
         font-size: 15px;
         letter-spacing: 1px;
-        transform: translate(calc(100% + 20px), calc(0% + 10px));
+        transform: translate(calc(100% + 105px), calc(0% + 10px));
     }
 
     .descriptionBlock {

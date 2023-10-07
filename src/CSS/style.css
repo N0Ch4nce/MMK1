@@ -504,7 +504,7 @@ div img {
   text-transform: uppercase;
   position: absolute;
   bottom: 0;
-  transform: translate(calc(100% + 105px), calc(0% + 10px));
+  transform: translate(0, calc(0% + 60px));
 }
 
 .aboutBlock:last-child {
