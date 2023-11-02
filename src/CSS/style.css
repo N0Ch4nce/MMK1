@@ -208,11 +208,13 @@ div img {
 .footerBlock.logo {
   width: 290px;
   justify-content: center;
+  cursor: pointer;
 }
 
 .footerCenterBlock {
-  width: calc(100% - 330px);
   justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 330px);
 }
 
 .footerLogo {
@@ -261,7 +263,7 @@ div img {
 .footerBlock.lavaweb {
   flex-direction: row;
   align-self: center;
-  font-family: ManifoldExtended;
+  font-family: Akrobat;
   border: 1px solid white;
   padding: 17px 15px 12px 15px;
   margin: 0;
@@ -271,6 +273,7 @@ div img {
   margin: 0px 0px 0px 5px;
   width: 60px;
   height: 20px;
+  top: 3px;
 }
 
 
@@ -758,8 +761,8 @@ div img {
 }
 
 .adresesAnnotation {
-  font-family: ManifoldExtended;
-  font-size: 0.9vw;
+  font-family: Akrobat;
+  font-size: 1vw;
   font-weight: 600;
   margin: 1vw 0px 0px 0px;
 }
@@ -1560,3 +1563,12 @@ h4 {
   background-color: rgba(255, 80, 0, 0.75);
 }
 
+
+
+.ql-editor {
+  display: block
+}
+
+.ql-toolbar.ql-snow {
+  background: whitesmoke;
+}

@@ -29,7 +29,7 @@ export default function MainPage(props) {
                 </div>
                 <div className="advantage">
                     <div className="advIcon" />
-                    <div className="advText">Круглосуточная сервисная служба<br /> и собственная база зап. частей</div>
+                    <div className="advText">Круглосуточная сервисная служба<br /> и собственная база запасных частей</div>
                 </div>
                 <div className="advantage">
                     <div className="advIcon" />
