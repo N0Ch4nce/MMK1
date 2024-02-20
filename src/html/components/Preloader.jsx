@@ -1,7 +1,8 @@
 export default function Preloader(props) {
 
     return <>
-    <div className={props.windowLoaded && props.craneRendered ? "preloaderBackground" : "preloaderBackground active"}>
+    {/* <div className={props.windowLoaded && props.craneRendered ? "preloaderBackground" : "preloaderBackground active"}> */}
+    <div className={props.windowLoaded ? "preloaderBackground" : "preloaderBackground active"}>
         <div className="preloader">
             <div className="lines">
                 <div className="line line-1"></div>

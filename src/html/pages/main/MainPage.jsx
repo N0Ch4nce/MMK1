@@ -19,7 +19,7 @@ export default function MainPage(props) {
     <div className="page mainPage">
         <div className="mainPageLeftContentBlock">
             <div className="titleBlock">
-                <h1 className="title">Краны в аренду<br /> по отличным ценам</h1>
+                <h1 className="title">Башенные краны в аренду<br /> по отличным ценам</h1>
                 <h2 className="city">Москва</h2>
             </div>
             <div className="advantagesBlock">
