@@ -4,6 +4,7 @@ import { initializeApp } from "firebase/app";
 import 'firebase/auth';
 import 'firebase/storage';
 import 'firebase/firestore';
+import { doc, getDoc, getFirestore } from "firebase/firestore";
 
 
 const firebaseConfig = {
@@ -17,4 +18,10 @@ const firebaseConfig = {
 
 
 export const app = initializeApp(firebaseConfig);
+
+const db = getFirestore(app);
+export const docRef=doc(db,'about','about');
+
+export const getAllPromise= getDoc(docRef);
+
 

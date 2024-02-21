@@ -44,6 +44,10 @@ export default function MainContent() {
   const [websiteReady, setWebsiteReady] = useState(false)
   const [preloaderOff, setPreloaderOff] = useState(false)
 
+
+  const {items } = useSelector(state=>state.items);
+  const {field2 } = useSelector(state=>state.about);
+
   useEffect(() => {
     if (preloaderOff) {
       setTransition(true)
@@ -87,10 +91,19 @@ export default function MainContent() {
   const {getAboutData} = useAbout();
 
   useEffect(()=>{
-      getAllItems();
-      getAboutData();
-      setWindowLoaded(true);
+getAllItems();
+ getAboutData();
+
+
+
+
   },[]);
+
+  useEffect(()=>{
+    if(items?.length&& field2){
+      setWindowLoaded(true);
+    }
+  },[items,field2])
 
 
   return <>
