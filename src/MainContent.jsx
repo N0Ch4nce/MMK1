@@ -87,10 +87,10 @@ export default function MainContent() {
     const { getAllItems } = useItems();
     const { getAboutData } = useAbout();
 
-    // useEffect(() => {
-    //     getAllItems();
-    //     getAboutData();
-    // }, []);
+    useEffect(() => {
+        getAllItems();
+        getAboutData();
+    }, []);
 
     useEffect(() => {
         if (items?.length && field2) {
