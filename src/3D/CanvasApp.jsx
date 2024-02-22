@@ -17,9 +17,10 @@ export default function CanvasApp(props) {
     eventPrefix={"client"}
     eventSource={document.querySelector('.canvasParent')}
     camera={{ fov: 50, position: [0, 5, 6], near: 0.01, far: 150 }}
-    dpr={windowWidth > 768 ? dpr : 2}
+    dpr={window.innerWidth >= 1440 ? Math.min(window.devicePixelRatio, 2) : Math.min(window.devicePixelRatio, dpr)}
     >
-      {/* <PerformanceMonitor onIncline={() => setDpr(1.5)} onDecline={() => setDpr(1)} /> */}
+      {window.innerWidth < 1440 &&
+      <PerformanceMonitor onIncline={() => setDpr(Math.min(window.devicePixelRatio, 2))} onDecline={() => setDpr(0.9)} /> }
       <MyEnvironment {...props} />
       <CraneModel {...props} />
     </Canvas>    

@@ -103,21 +103,21 @@ export default function Case3Model(props){
 
 
     useFrame((renderer, delta) => {
-        if (props.activatedMainPage === true && ref.current != undefined) {     
-
+        if (props.activatedMainPage === true && ref.current != undefined) {
+            
             // DESKTOP VERSION 
             if (window.innerWidth > 768 && ref.current != null) {
+
+                easing.damp(ref.current.rotation, 'y', Math.max(Math.min(renderer.mouse.x * 0.5 + 0.5, 0.6), 0.2), 1.5, delta)
+
                 // Model animation
                 easing.damp(ref.current.position, 'y', ((window.innerWidth - 768) / (1920 - 768) * (-33.5 - -13) + -13), 3, delta)
-
                 easing.damp(ref.current.position, 'x', ((window.innerWidth - 768) / (1920 - 768) * (4 - 2) + 2), 1.2, delta)
-
-                // easing.damp(ref.current.position, 'z', ((camera.position.x - 0) / (-14 - 0)) * (10 - 0) + 0, 0.5, delta)
-                easing.damp(ref.current.position, 'z', ((camera.position.x - 0) / (-14 - 0)) * (((window.innerWidth - 768) / (1920 - 768) * (10 - 5) + 5) - 0) + 0, 0.5, delta)
                 // ((window.innerWidth - 768) / (1920 - 768) * (10 - 5) + 5)
 
-                if (ref.current.position.y <= -30) {
-                    easing.damp(ref.current.rotation, 'y', 0.45,  2, delta)
+                if (ref.current.position.y <= ((window.innerWidth - 768) / (1920 - 768) * (-30 - -11.5) + -11.5)) {
+                    easing.damp(ref.current.position, 'z', -5,  2, delta)
+                    // easing.damp(ref.current.rotation, 'y', Math.max(Math.min(renderer.mouse.x * 0.5 + 0.5, 0.6), 0.2), 1.5, delta)
                 }
             }
 
@@ -153,10 +153,15 @@ export default function Case3Model(props){
 
     return <>
     <OrbitControls ref={orbitControlsRef} 
+        // minAzimuthAngle={window.innerWidth > 768 ? -Math.PI * 0.55 : -Math.PI * ((window.innerWidth - 300) / (768 - 300) * (0.075 - 0.04) + 0.04)}
+        // maxAzimuthAngle={window.innerWidth > 768 ? Math.PI * 0.15 : Math.PI * ((window.innerWidth - 300) / (768 - 300) * (0.04 - 0.025) + 0.025)}
+        // minPolarAngle={window.innerWidth > 768 ? Math.PI * 0.45 : Math.PI * 0.25} // Минимальный угол обзора в радианах (например, 0.1 радиан, чтобы разрешить немножко вниз)
+        // maxPolarAngle={window.innerWidth > 768 ? Math.PI * 0.57 : Math.PI * 0.5} // Максимальный угол обзора в радианах (например, Math.PI - 0.1 радиан, чтобы разрешить немножко вверх)
         minAzimuthAngle={window.innerWidth > 768 ? -Math.PI * 0.55 : -Math.PI * ((window.innerWidth - 300) / (768 - 300) * (0.075 - 0.04) + 0.04)}
         maxAzimuthAngle={window.innerWidth > 768 ? Math.PI * 0.15 : Math.PI * ((window.innerWidth - 300) / (768 - 300) * (0.04 - 0.025) + 0.025)}
         minPolarAngle={window.innerWidth > 768 ? Math.PI * 0.45 : Math.PI * 0.25} // Минимальный угол обзора в радианах (например, 0.1 радиан, чтобы разрешить немножко вниз)
         maxPolarAngle={window.innerWidth > 768 ? Math.PI * 0.57 : Math.PI * 0.5} // Максимальный угол обзора в радианах (например, Math.PI - 0.1 радиан, чтобы разрешить немножко вверх)
+        enableRotate={window.innerWidth > 768 ? false : true}
         target={[0, camera.position.y, 0]}
         enableDamping={true}
         enablePan={false}

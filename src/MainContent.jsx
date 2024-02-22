@@ -100,7 +100,7 @@ export default function MainContent() {
 
     return (
         <>
-            {/* <CanvasApp activePage={activePage} activatedMainPage={activatedMainPage} setActivatedMainPage={setActivatedMainPage} craneRendered={craneRendered} setCraneRendered={setCraneRendered}/> */}
+            <CanvasApp activePage={activePage} activatedMainPage={activatedMainPage} setActivatedMainPage={setActivatedMainPage} craneRendered={craneRendered} setCraneRendered={setCraneRendered}/>
             <Header activePage={activePage} setActivePage={setActivePage} transition={transition} />
             <ToastContainer />
 
@@ -140,7 +140,7 @@ export default function MainContent() {
             </div>
             <Footer />
             <div className={preloaderOff ? 'backgroundBlock' : 'backgroundBlock active'} />
-            <Preloader windowLoaded={windowLoaded} craneRendered={craneRendered} />
+            {/* <Preloader windowLoaded={windowLoaded} craneRendered={craneRendered} /> */}
             <div className={transition && preloaderOff ? 'transitionBlock active' : 'transitionBlock'}>
                 <div className="transitionLine" />
                 <div className="transitionLine" />

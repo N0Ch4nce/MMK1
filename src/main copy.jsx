@@ -8,7 +8,6 @@ import {store,persistor} from '../store/store.js';
 import { ToastContainer } from 'react-toastify';
 import { PersistGate } from 'redux-persist/integration/react';
 import Preloader from './html/components/Preloader.jsx';
-import TopContent from './TopContent.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -16,7 +15,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     
   
   <Provider store={store}>
-    <TopContent />
+    
+    <PersistGate loading={<Preloader />} persistor={persistor}>
+      <BrowserRouter>
+        <MainContent />
+      </BrowserRouter>
+    </PersistGate>
   </Provider>
 
 )
