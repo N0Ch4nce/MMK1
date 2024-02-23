@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import BackButton from '../../components/BackButton';
 
 export default function RentFilter({ onFilterChange, setCards, cards, cardInfo, brendFilter, setBrendFilter, modelFilter, setModelFilter, capacityFilter, setCapacityFilter, minRadiusFilter, setMinRadiusFilter, maxRadiusFilter, setMaxRadiusFilter, sizesFilter, setSizesFilter, search, setSearch }) {
   const [brends, setBrends] = useState([...new Set(cardInfo.map(card => card.brand))]);
@@ -149,6 +150,7 @@ export default function RentFilter({ onFilterChange, setCards, cards, cardInfo, 
 
   return (<>
     <div className="filterFixedBlock">
+      <BackButton link={'/'} absolute={false}/>
       <div className="pageNavigationBlock">
         <div className="pageNav" onClick={() => {
             navigate('/')

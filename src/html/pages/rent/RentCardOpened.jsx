@@ -4,6 +4,7 @@ import ServicesConditionsBlock from "../services/ServicesConditionsBlock.jsx";
 import CharacteristicContent from "./CharacteristicContent.jsx";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux"
+import BackButton from "../../components/BackButton.jsx";
 
 export default function RentCardOpened(props) {
     const navigate = useNavigate()
@@ -13,6 +14,7 @@ export default function RentCardOpened(props) {
 
     return <>
         <div className="rentCardOpenedContainer">
+            <BackButton link={'/rent'} absolute={false}/>
             <div className="pageNavigationBlock">
                 <div className="pageNav" onClick={() => {
                     navigate('/')

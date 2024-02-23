@@ -88,13 +88,14 @@ export default function MainContent() {
     const { getAboutData } = useAbout();
 
     useEffect(() => {
+        setWindowLoaded(true);
         getAllItems();
         getAboutData();
     }, []);
 
     useEffect(() => {
         if (items?.length && field2) {
-            setWindowLoaded(true);
+            // setWindowLoaded(true);
         }
     }, [items, field2]);
 
@@ -140,7 +141,7 @@ export default function MainContent() {
             </div>
             <Footer />
             <div className={preloaderOff ? 'backgroundBlock' : 'backgroundBlock active'} />
-            {/* <Preloader windowLoaded={windowLoaded} craneRendered={craneRendered} /> */}
+            <Preloader windowLoaded={windowLoaded} craneRendered={craneRendered}/>
             <div className={transition && preloaderOff ? 'transitionBlock active' : 'transitionBlock'}>
                 <div className="transitionLine" />
                 <div className="transitionLine" />

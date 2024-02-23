@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import ServicesBlock from "./ServicesBlock.jsx";
 import ServicesConditionsBlock from "./ServicesConditionsBlock.jsx";
+import BackButton from "../../components/BackButton.jsx";
 
 export default function ServicesPage(props) {
     const navigate = useNavigate()
@@ -8,6 +9,7 @@ export default function ServicesPage(props) {
     return <>
     <div className="page servicesPage">
         <div className="pageContentBlock">
+            <BackButton link={'/'} absolute={false}/>
             <div className="pageNavigationBlock">
                 <div className="pageNav" onClick={() => {
                     navigate('/')

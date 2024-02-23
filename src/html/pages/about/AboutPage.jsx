@@ -7,6 +7,7 @@ import { useItems } from "../../../hooks/useItems";
 
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
+import BackButton from "../../components/BackButton";
 
 
 export default function AboutPage(props) {
@@ -76,6 +77,7 @@ export default function AboutPage(props) {
     return <>
         <div className="page aboutPage">
             <div className="pageContentBlock">
+                <BackButton link={'/'} absolute={false}/>
                 <div className="pageNavigationBlock">
                     <div className="pageNav" onClick={() => {
                         navigate('/')

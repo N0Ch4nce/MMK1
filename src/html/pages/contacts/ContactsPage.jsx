@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import ServicesConditionsBlock from "../services/ServicesConditionsBlock.jsx";
 import { useSelector } from "react-redux";
+import BackButton from "../../components/BackButton.jsx";
 
 export default function ContactsPage(props) {
     const navigate = useNavigate();
@@ -9,6 +10,7 @@ export default function ContactsPage(props) {
     return <>
     <div className="page contactsPage">
         <div className="pageContentBlock">
+            <BackButton link={'/'} absolute={false}/>
             <div className="pageNavigationBlock">
                 <div className="pageNav" onClick={() => {
                     navigate('/')
